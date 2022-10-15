@@ -56,4 +56,8 @@ PRIMARY KEY (id_tipo_produto)
 
 DESC tipo_produto;
 
+ALTER TABLE user ADD UNIQUE KEY (nome);
 
+INSERT INTO tipo_user VALUES(DEFAULT,"s","s","s");
+
+INSERT INTO user VALUES(DEFAULT,"demo","demo","1");
