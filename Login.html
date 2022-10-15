@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
 </head>
 <body>
     
 <header>
-    <h1>
-        Login
-    </h1>
+    <div class="titulo">
+
+        <h1>
+            Login
+        </h1>
+        
+    </div>
+    
+    <div class="logo_header">
+
+        <img src="img/JL.jpg" alt="logo_exemplo">
+        
+    </div>
+
 </header>
 
 <section>
@@ -23,17 +35,26 @@
             <fieldset>Fromulario
 
                 <fieldset>
+                    <div class="entrada"> 
                     
-                    <label for="user">User:</label>
-                    <input type="text" id="user" name="user" >
+                        <label for="user">User:</label>
                     
-                    <label for="password">password:</label>
-                    <input type="text" id="password" name="password" >
+                        <input type="text" id="user" name="user" required placeholder="nome" >
+                    
+                    </div>
+                    
+                    
+                    <div class="entrada">
+
+                        <label for="password">password:</label>
+                        <input type="password" id="password" name="password" required placeholder="senha" >
+                        
+                    </div>
 
                 </fieldset>
 
-                
-                <button type="submit">Enviar</button>
+
+                <button type="submit" class="btn_login">Enviar</button>
 
             </fieldset>
 
@@ -42,6 +63,14 @@
     </main>
 
 </section>
+
+<footer>
+    <h5>
+        Welcom to O.S
+    </h5>
+</footer>
+
+<script src="js/login.js"></script>
 
 </body>
 </html>
